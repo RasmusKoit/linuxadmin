@@ -1,5 +1,11 @@
 #!/bin/bash
 
+ip addr add 172.16.99.5/24 dev eth0
+ip addr add 172.16.88.5/24 dev eth1
+
+ip link set dev eth0 up
+ip link set dev eth1 up
+
 echo "EX 4, time to change network interfaces around"
 
 echo "Exporting eth0 interface and getting eth1 mac address"
@@ -30,4 +36,5 @@ ip addr add 172.16.99.5/24 dev eth1
 
 ip link set dev eth0 up
 ip link set dev eth1 up
+
 echo "Network interfaces are now changed with itself"
