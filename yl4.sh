@@ -15,7 +15,7 @@ export MATCHADDR=`ifconfig -a | grep -i hwaddr | grep eth1 | awk {'print $5'}`
 /lib/udev/write_net_rules eth0
 
 export INTERFACE=eth1
-export MATCHADDR=`ifconfig -a | grep -i hwaddr | grep eth0 | awp {'print $5}'`
+export MATCHADDR=`ifconfig -a | grep -i hwaddr | grep eth0 | awp {'print $5'}`
 
 /lib/udev/write_net_rules eth1
 
